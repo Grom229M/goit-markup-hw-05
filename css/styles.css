@@ -6,6 +6,7 @@
   --body-bg: #ffffff;
   --button-portf: #e7e9fc;
   --customers-icon: #8e8f99;
+  --modal-bt: #404bbf;
 }
 img {
   display: block;
@@ -392,6 +393,16 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 8px 0px 8px 16px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.form-input::placeholder {
+  color: #ffffff;
 }
 
 .footer-input {
@@ -897,7 +908,7 @@ h1 {
   color: #8e8f99;
   font-size: 12px;
   font-family: Roboto;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   display: flex;
   align-items: center;
@@ -934,9 +945,9 @@ h1 {
 }
 
 .input-check:checked + .check-text span {
-  background-color: var(#404bbf);
+  background-color: var(--modal-bt);
   border: none;
-  fill: var(#f4f4fd);
+  fill: var(--color-text-p);
 }
 
 .check-text a {
@@ -1048,7 +1059,6 @@ h1 {
   font-family: "Roboto", sans-serif;
   min-width: 169px;
   font-size: 16px;
-  font-family: Roboto;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
